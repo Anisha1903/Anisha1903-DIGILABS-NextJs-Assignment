@@ -1,36 +1,42 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+/* Set the global background color to a grey gradient */
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    to bottom,
+    #b0b0b0, /* Light grey color for the top */
+    #3a3a3a  /* Dark grey color for the bottom */
+  );
+  color: #FFFFFF; /* White color for text to contrast against the dark background */
+  margin: 0;
+  padding: 0;
 }
 
-/* making border radius and gradient to circles */
+/* Define root variables for consistency */
+:root {
+  --foreground-rgb: 255, 255, 255; /* White color for text */
+  --background-start-rgb: 176, 176, 176; /* Light grey color for gradient start */
+  --background-end-rgb: 58, 58, 58; /* Dark grey color for gradient end */
+}
+
+/* Custom styles for elements with gradient backgrounds */
+.bg-gradient-to-b {
+  background: linear-gradient(
+    to bottom,
+    #2a2041, /* Dark purple color for screen component */
+    #000000  /* Black color */
+  );
+}
+
+/* Define custom styles for specific components if needed */
 .border-gradient {
   position: relative;
   border-radius: 50%;
 }
+
 .border-gradient::before {
   content: "";
   position: absolute;
@@ -47,7 +53,6 @@ body {
   mask-composite: exclude;
 }
 
-/* bell icons circle */
 .bg-custom-gradient {
   background: linear-gradient(
     360deg,
