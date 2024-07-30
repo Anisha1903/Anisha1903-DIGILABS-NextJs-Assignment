@@ -37,4 +37,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Live Project
 
-You can view the live project [here](https://vercel.com/anisha-ms-projects/digilabs-next-js-assignment)
+You can view the live project [here](https://digilabs-next-js-assignment-five.vercel.app/)
