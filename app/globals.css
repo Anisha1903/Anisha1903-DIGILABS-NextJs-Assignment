@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Set the global background color to a grey gradient */
 body {
   background: linear-gradient(
     to bottom,
@@ -26,12 +25,12 @@ body {
 .bg-gradient-to-b {
   background: linear-gradient(
     to bottom,
-    #2a2041, /* Dark purple color for screen component */
-    #000000  /* Black color */
+    #2a2041,
+    #000000 
   );
 }
 
-/* Define custom styles for specific components if needed */
+/* making border radius and gradient to circles */
 .border-gradient {
   position: relative;
   border-radius: 50%;
